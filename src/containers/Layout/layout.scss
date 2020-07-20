@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  color: rgb(6, 126, 163);
+  background-color: rgb(113, 204, 247);
+  h2 {
+    margin: 0;
+  }
+  .theme-control {
+    position: absolute;
+    margin: 0.8rem;
+    top: 0px;
+    right: 8px;
+    label {
+      color: white;
+      font-weight: bold;
+    }
+    select {
+      margin: 0 0.4rem;
+    }
+  }
+}
+
+.main-content {
+  margin-top: 4rem;
+  padding: 1rem;
+}
+.main-content-dark {
+  background-color: rgb(66, 65, 65) !important;
+}

@@ -1,0 +1,141 @@
+.add-table {
+  margin: 0.8rem 0;
+  button {
+    background-color: rgb(50, 80, 247);
+    color: white;
+    box-shadow: 2px 2px 2px gray;
+    &:hover,
+    &:active {
+      background-color: white;
+      color: rgb(50, 80, 247);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.add-table-dark {
+  button {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(50, 80, 247) !important;
+    box-shadow: 2px 2px 2px rgb(245, 240, 240) !important;
+    &:hover,
+    &:active {
+      background-color: rgb(243, 242, 211) !important;
+      color: rgb(50, 80, 247) !important;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  button {
+    margin: 0 0.4rem;
+    color: white;
+    box-shadow: 2px 2px 2px gray;
+
+    background-color: rgb(235, 63, 63);
+    &:hover,
+    &:active {
+      background-color: white;
+      color: rgb(235, 63, 63);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.sorting-arrow {
+  cursor: pointer;
+  font-size: 1.2em;
+  vertical-align: middle !important;
+  margin: 0 4px;
+}
+.table-container {
+  padding: 8px;
+  display: inline-block;
+  background-color: rgb(247, 247, 232);
+  width: 47%;
+  margin: 0.8rem;
+  vertical-align: text-top;
+  border: 1px solid green;
+  border-radius: 4px;
+}
+.marker-table {
+  border: 2px solid green;
+  border-collapse: collapse;
+  border-radius: 4px;
+  margin: 2.5rem 0;
+  width: 100%;
+  min-width: 40rem;
+  font-size: 1.6rem;
+  .marker-table__head {
+    background-color: green;
+    tr {
+      color: white;
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+  td,
+  th {
+    border: 4px solid green;
+    padding: 0.8rem 1.6rem;
+    max-width: 20%;
+  }
+  .table-cell {
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(225, 245, 223);
+    font-weight: bold;
+    padding: 0.4rem;
+    &.coords {
+      width: 40%;
+      margin: 0 0.4rem;
+    }
+  }
+  .update-button {
+    background-color: green;
+    color: white;
+    width: 100%;
+  }
+  .edit-button {
+    background-color: orange;
+    color: white;
+    width: 100%;
+    &:hover {
+      background-color: white;
+      color: orange;
+    }
+  }
+  .coord-controls {
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 45%;
+    }
+  }
+}
+.add-row-button {
+  background-color: green;
+  color: white;
+  min-width: 25%;
+}
+.add-row-button:hover,
+.update-button:hover {
+  background-color: white;
+  color: green;
+}
+
+@media (max-width: 1400px) {
+  .table-container {
+    display: block;
+    margin: 0.8rem auto;
+    width: 90%;
+  }
+}
